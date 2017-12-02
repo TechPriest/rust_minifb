@@ -374,6 +374,9 @@ impl Window {
             Scale::X1 => 1,
             Scale::X2 => 2,
             Scale::X4 => 4,
+            Scale::X8 => 8,
+            Scale::X16 => 16,
+            Scale::X32 => 32,
             Scale::FitScreen => {
                 let wh: u32 = mfb_get_screen_size();
                 let screen_x = (wh >> 16) as i32;
